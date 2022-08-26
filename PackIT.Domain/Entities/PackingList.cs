@@ -8,7 +8,7 @@ namespace PackIT.Domain.Entities;
 public class PackingList : AggregateRoot<PackingListId>
 {
     internal PackingList(PackingListId id, PackingListName name, Localization localiaztion)
-    : base(id)
+        : base(id)
     {
         this.name = name;
         this.localiaztion = localiaztion;

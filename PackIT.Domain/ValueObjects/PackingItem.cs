@@ -4,7 +4,7 @@ namespace PackIT.Domain.ValueObjects;
 
 public record PackingItem
 {
-    public PackingItem(string name, uint quantity, bool isPacked)
+    public PackingItem(string name, uint quantity, bool isPacked = false)
     {
         if (string.IsNullOrWhiteSpace(name))
         {
